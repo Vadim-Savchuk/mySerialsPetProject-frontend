@@ -1,0 +1,35 @@
+.serial {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    padding: 13px 25px;
+    flex-direction: column;
+    border-radius: var(--borderRadius);
+    border: 2px solid var(--accentColor);
+
+    .serial-row {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .serial-title {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .edit_input {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--mainColor);
+            background-color: transparent;
+        }
+
+        .serial-buttons {
+            gap: 10px;
+            display: flex;
+        }
+    }
+}

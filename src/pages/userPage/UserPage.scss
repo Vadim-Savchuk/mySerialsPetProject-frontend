@@ -1,0 +1,47 @@
+.user {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .button-beck {
+        width: 40px;
+        font-size: 25px;
+        transition: 0.2s;
+        text-align: start;
+        color: var(--whiteColor);
+        background-color: transparent;
+    }
+
+    .info {
+        flex: 1;
+
+        .list {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 20px;
+                flex-basis: 49%;
+                border-radius: 20px;
+                border: 2px solid var(--mainColor);
+            }
+        }
+    }
+
+    .logout {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        transition: all 0.2s;
+        color: var(--whiteColor);
+        background-color: transparent;
+        border: 2px solid var(--accentColor);
+
+        &:hover {
+            color: var(--blackColor);
+            background-color: var(--accentColor);
+        }
+    }
+}

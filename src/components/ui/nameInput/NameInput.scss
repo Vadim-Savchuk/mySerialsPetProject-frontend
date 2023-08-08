@@ -1,0 +1,11 @@
+.input-name {
+    width: 100%;
+    font-size: 16px;
+    color: var(--whiteColor);
+    background-color: transparent;
+
+    &::placeholder {
+        font-weight: 600;
+        color: var(--whiteColor);
+    }
+}

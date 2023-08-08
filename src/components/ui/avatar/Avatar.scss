@@ -1,0 +1,60 @@
+.avatar-wrapper {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        overflow: hidden;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--whiteColor);
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .avatars-list {
+        gap: 10px;
+        display: flex;
+        margin-top: -100%;
+        border-radius: 20px;
+        align-items: center;
+        transition: margin-top 0.2s;
+
+        &.active {
+            margin-top: 0px;
+        }
+
+        button {
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .avatar-wrapper {
+        margin-bottom: 15px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .avatars-list {
+            flex-wrap: wrap;
+        }
+    }
+}

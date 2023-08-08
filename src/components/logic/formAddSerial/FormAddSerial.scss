@@ -1,0 +1,33 @@
+.add-serial-box {
+    opacity: 0;
+    height: 0px;
+    visibility: hidden;
+    transition: height 0.4s;
+
+    .add-serial-form {
+        gap: 15px;
+        display: flex;
+        margin: 20px 0px;
+        padding: 15px 20px;
+        border-radius: 20px;
+        flex-direction: column;
+        border: 2px solid var(--accentColor);
+
+        .add-serial-form-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .add-serial-form-buttons {
+                gap: 10px;
+                display: flex;
+            }
+        }
+    }
+}
+
+.add-serial-box.active {
+    opacity: 1;
+    height: 195px;
+    visibility: visible;
+}

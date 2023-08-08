@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import './normalize.scss';
+
+:root {
+    --fontSize: 14px;
+    --lineHeight: normal;
+    --borderRadius: 20px;
+    --accentColor: #ffd700;
+    --mainFont: 'Rubik', sans-serif;
+}
+
+body[data-thema='light'] {
+    --mainColor: #000000;
+    --dodColor: #fffaf2;
+}
+
+body[data-thema='dark'] {
+    --mainColor: #fffaf2;
+    --dodColor: #000000;
+}
+
+body {
+    color: var(--mainColor);
+    font-size: var(--fontSize);
+    background: var(--dodColor);
+    transition: background 0.9s;
+    font-family: var(--mainFont);
+    line-height: var(--lineHeight);
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+    padding: 45px 20px 20px;
+
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-title {
+    font-weight: 700;
+}
+
+.authorization-offer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .authorization {
+        width: 100%;
+        display: flex;
+        max-width: 400px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .auth-form {
+            gap: 10px;
+            width: 100%;
+            display: flex;
+            max-width: 400px;
+            flex-direction: column;
+
+            .auth-form_buttons {
+                gap: 10px;
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+                justify-content: space-between;
+
+                a,
+                button {
+                    flex: 1;
+                    font-size: 16px;
+                    transition: 0.2s;
+                    text-align: center;
+                    padding: 13px 20px;
+                    color: var(--whiteColor);
+                    background-color: transparent;
+                    border: 2px solid var(--accentColor);
+
+                    &:hover {
+                        color: var(--blackColor);
+                        background-color: var(--accentColor);
+                    }
+                }
+
+                a {
+                    border-radius: 0px 20px 20px 0px;
+                }
+
+                button {
+                    border-radius: 20px 0px 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accentColor);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--accentColor);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dodColor);
+    border: 1px solid var(--accentColor);
+}

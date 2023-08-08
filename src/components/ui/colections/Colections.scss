@@ -1,0 +1,22 @@
+.colections {
+    gap: 10px;
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+
+    button {
+        font-size: 14px;
+        font-weight: 700;
+        transition: 0.2s;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: var(--mainColor);
+        background-color: transparent;
+        border: 2px solid var(--accentColor);
+
+        &.active {
+            color: var(--dodColor);
+            background-color: var(--accentColor);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.num-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.2s;
+    color: var(--whiteColor);
+    background-color: transparent;
+    border: 2px solid var(--accentColor);
+
+    &:hover {
+        border: 2px dashed var(--accentColor);
+    }
+
+    &.active {
+        border: 2px solid var(--whiteColor);
+    }
+}
