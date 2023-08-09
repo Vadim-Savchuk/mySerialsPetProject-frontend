@@ -6,7 +6,7 @@ I love to watch series and anime and when I watch them a lot I often forget whic
 ## To start
 + You need to download the frontend and backend in one folder. <br/>
   + The frontend: **https://github.com/Vadim-Savchuk/mySerialsPetProject-frontend**  <br/>
-  + The Backend: **https://github.com/Vadim-Savchuk/mySerilasPetProject-backand**  <br/>
+  + The backend: **https://github.com/Vadim-Savchuk/mySerilasPetProject-backand**  <br/>
 + In the terminal run the command:  <br/>
 ```javascript
 cd server
