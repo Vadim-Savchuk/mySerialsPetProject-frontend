@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mySerialsPetProject-frontend/static/css/main.4bd1ca90.css",
-    "main.js": "/mySerialsPetProject-frontend/static/js/main.342a43d2.js",
+    "main.js": "/mySerialsPetProject-frontend/static/js/main.dfc2964d.js",
     "index.html": "/mySerialsPetProject-frontend/index.html",
     "static/media/search.svg": "/mySerialsPetProject-frontend/static/media/search.d15bc1f95c9271337149.svg",
     "main.4bd1ca90.css.map": "/mySerialsPetProject-frontend/static/css/main.4bd1ca90.css.map",
-    "main.342a43d2.js.map": "/mySerialsPetProject-frontend/static/js/main.342a43d2.js.map"
+    "main.dfc2964d.js.map": "/mySerialsPetProject-frontend/static/js/main.dfc2964d.js.map"
   },
   "entrypoints": [
     "static/css/main.4bd1ca90.css",
-    "static/js/main.342a43d2.js"
+    "static/js/main.dfc2964d.js"
   ]
 }
