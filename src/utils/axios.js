@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'http://localhost:3055/api',
+    baseURL: 'https://myserilaspetproject-backand.onrender.com/api',
 })
 
 instance.interceptors.request.use(config => {

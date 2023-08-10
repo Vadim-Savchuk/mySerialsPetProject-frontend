@@ -4,7 +4,7 @@ import MiniButton from '../../ui/miniButton/MiniButton';
 
 import { removeMessageHandler } from '../../../redux/features/messageSlice';
 
-import { miniCloseButton } from '../../../data/img';
+import { buttonsImages } from '../../../data/img';
 
 import './Messages.scss';
 
@@ -21,8 +21,8 @@ const Messages = () => {
 
                         <div className='message-offer'>
                             <MiniButton
-                                img={miniCloseButton.img}
-                                alt={miniCloseButton.alt}
+                                img={buttonsImages.close}
+                                alt={'Remove'}
                                 func={() => dispatch(removeMessageHandler(index))}
                             />
                         </div>

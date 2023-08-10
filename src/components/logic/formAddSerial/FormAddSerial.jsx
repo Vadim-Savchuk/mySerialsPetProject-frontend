@@ -8,9 +8,7 @@ import MiniButton from '../../ui/miniButton/MiniButton';
 import NumButton  from '../../ui/numButton/NumButton';
 import NameInput  from '../../ui/nameInput/NameInput';
 
-import axios from 'axios';
-
-import { miniSaveButton, miniCloseButton } from '../../../data/img';
+import { buttonsImages } from '../../../data/img';
 
 import './FormAddSerial.scss';
 
@@ -84,13 +82,13 @@ const FormAddSerial = ({ activeAddForm, setActiveAddForm }) => {
 
                     <div className="add-serial-form-buttons">
                         <MiniButton
-                            img={miniSaveButton.img}
-                            alt={miniSaveButton.alt}
+                            img={buttonsImages.save}
+                            alt={'Save'}
                             func={handleSubmit}
                         />
                         <MiniButton
-                            img={miniCloseButton.img}
-                            alt={miniCloseButton.alt}
+                            img={buttonsImages.close}
+                            alt={'Close'}
                             func={() => setActiveAddForm(false)}
                         />
                     </div>

@@ -1,33 +1,10 @@
-
 // Buttons
-export const miniSaveButton = {
-    alt: 'Save',
-    img: '/img/done.png',
-}
-
-export const miniDelateButton = {
-    alt: 'Delate',
-    img: '/img/delate.png',
-}
-
-export const miniEditButton = {
-    alt: 'Edit',
-    img: '/img/edit.png',
-}
-
-export const miniPinButton = {
-    alt: 'Watching',
-    img: '/img/pin.png',
-}
-
-export const miniPinActiveButton = {
-    alt: 'Pin',
-    img: '/img/active-pin.png',
-}
-
-export const miniCloseButton = {
-    alt: 'Close',
-    img: '/img/close.png',
+export const buttonsImages = {
+    save: process.env.PUBLIC_URL + '/assets/done.png',
+    delate: process.env.PUBLIC_URL + '/assets/delate.png',
+    edit: process.env.PUBLIC_URL + '/assets/edit.png',
+    pin: process.env.PUBLIC_URL + '/assets/pin.png',
+    close: process.env.PUBLIC_URL + '/assets/close.png',
 }
 
 // Avatar
@@ -39,12 +16,7 @@ export const avatars = [
 ]
 
 // Thema
-export const themaLightImg = {
-    alt: 'Light thema',
-    img: '/img/sun.png',
-}
-
-export const themaDarkImg = {
-    alt: 'Dark thema',
-    img: '/img/moon.png',
+export const thameImages = {
+    light: process.env.PUBLIC_URL + '/assets/sun.png',
+    dark: process.env.PUBLIC_URL + '/assets/moon.png',
 }

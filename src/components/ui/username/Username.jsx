@@ -1,6 +1,6 @@
 import MiniButton from '../miniButton/MiniButton';
 
-import { miniSaveButton } from '../../../data/img';
+import { buttonsImages } from '../../../data/img';
 
 import './Username.scss';
 
@@ -21,8 +21,8 @@ const Username = (props) => {
                         />
 
                         <MiniButton
-                            img={miniSaveButton.img}
-                            alt={miniSaveButton.alt}
+                            img={buttonsImages.save}
+                            alt={'Save'}
                             func={updateHandlerUser}
                         />
                     </div>

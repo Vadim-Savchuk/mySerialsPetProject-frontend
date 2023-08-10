@@ -6,7 +6,7 @@ import { removeSerial, editSerial } from '../../../redux/features/serialsSlice';
 import MiniButton from '../../ui/miniButton/MiniButton';
 import NumButton  from '../../ui/numButton/NumButton';
 
-import { miniSaveButton, miniEditButton, miniDelateButton, miniPinButton, miniPinActiveButton } from '../../../data/img';
+import { buttonsImages } from '../../../data/img';
 
 import './Serial.scss';
 
@@ -102,28 +102,28 @@ const Serial = ({ serial }) => {
                     {isEdit && (
                         <MiniButton
                             func={updateSerial}
-                            img={miniSaveButton.img}
-                            alt={miniSaveButton.alt}
+                            img={buttonsImages.save}
+                            alt={'Save'}
                         />
                     )}
 
                     {!isEdit && (
                         <>
                             <MiniButton
-                                img={miniEditButton.img}
-                                alt={miniEditButton.alt}
+                                img={buttonsImages.edit}
+                                alt={'Edit'}
                                 func={() => setIsEdit(true)}
                             />
                             <MiniButton
                                 func={() => setEditWatching(!editWatching)}
-                                img={miniPinButton.img}
-                                alt={miniPinButton.alt}
+                                img={buttonsImages.pin}
+                                alt={'Watching'}
                                 active={serial.watching}
                             />
                             <MiniButton
                                 func={deleteSerial}
-                                img={miniDelateButton.img}
-                                alt={miniDelateButton.alt}
+                                img={buttonsImages.delate}
+                                alt={'Delate'}
                             />
                         </>
                     )}
